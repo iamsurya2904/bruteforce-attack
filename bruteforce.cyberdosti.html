@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />  
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>  
+
+</head>
+<body>
+    <py-script> <link rel="stylesheet" href="bruteforcecaeser.py"></py-script>
+    <div class="container">
+        <h1>Brute Force Caesar Cipher</h1>
+        <form id="bruteForceForm" onsubmit="event.preventDefault(); bruteForceDecrypt();">
+            <label for="message">Encrypted Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <button type="submit">Decrypt</button>
+        </form>
+        <div id="result">
+            <h2>Possible Decryptions:</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
